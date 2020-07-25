@@ -1,0 +1,162 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "EldritchMonsters",
+				"abbreviation": "EM",
+				"full": "Eldritch Monsters",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1595685774,
+		"dateLastModified": 1595685774
+	},
+	"monster": [
+		{
+			"name": "Eldritch (Kaladir)",
+			"isNamedCreature": true,
+			"source": "EldritchMonsters",
+			"level": 17,
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "17d12 + 34",
+				"average": 144
+			},
+			"speed": {
+				"fly": {
+					"number": 30,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 14,
+			"int": 16,
+			"wis": 20,
+			"cha": 10,
+			"save": {
+				"con": "+4",
+				"str": "+6"
+			},
+			"skill": {
+				"perception": "+7",
+				"arcana": "+7",
+				"insight": "+7",
+				"religion": "+5"
+			},
+			"senses": [
+				"truesight 30 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"acid",
+				"bludgeoning",
+				"necrotic",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Abyssal",
+				"Elder Script",
+				"Common"
+			],
+			"spellcasting": [
+				{
+					"name": "Psychic Powers",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mind strike|Stream}"
+							]
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Relentless 3/Long Rest",
+					"entries": [
+						"If the Eldritch (Kaladir) takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multi-Attack",
+					"entries": [
+						"The Eldritch (Kaladir) makes two Imaginary Greataxe Attacks."
+					]
+				},
+				{
+					"name": "Imaginary Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 1d12 + 8}) psychic damage."
+					]
+				},
+				{
+					"name": "The Quickening",
+					"entries": [
+						"The Eldritch (Kaladir) can choose to mark one creature for death, for 1 minute. When it takes the Attack action on its turn, if it hits only that creature, it can make one more weapon attack than it normally could."
+					]
+				},
+				{
+					"name": "Mutual Understanding",
+					"entries": [
+						"The Eldritch (Kaladir) can choose one creature it can see. That creature must make a {@dc 10} Sanity Check or lose one point of sanity."
+					]
+				}
+			],
+			"environment": [
+				"eldritch ruins"
+			],
+			"fluff": {
+				"entries": [
+					"T̴̹͇̂̍͋h̴͙͌ĩ̵̟̳̲̑͛ş̵̣̖͒ ̸̤̜̺̃ć̵̣̣̯̃̽r̸̫̂ë̵͖̩̼a̶̲͈̝̓t̶̹̐̇̈́u̷̲͐̾̕ŗ̸̓̽͆ë̶̛͇́̓ ̷̦̰̮̀́̅ḯ̶̙̉s̵̨͒̋͗ͅ ̴̙̋a̴̘͋̎ņ̵̬͇̄͊ ̵̢͖̳̍̐͝O̷̞̝̣̽̀b̷̬͆s̷̢̄̈c̶̫͎̞̕e̴̪̾̊͆n̶̼͊e̶̺̅͝ ̶̦̈̅͜i̴̜͓͆̇͠m̷̭̀ì̶͉̤̔t̶̯̞͝ą̶̛̫̯t̶̩̀̀̅i̴͉̯͔͌͗o̷̢̊̌n̵̮̚ ̸̣͌͋ò̶͇͎͖͊f̷̻̊̄̕ ̵̖͈̎̀̚t̸̤͂h̸̩͗̑e̷̟͕̿ ̷̹̞̾̔Á̴͔̯̤̊d̸͎͗̐v̵͓̦͐e̶͙̥̿͛̕͜n̸̢̿͋͒t̸̜͐͜u̸̩̱̰̽r̶͉͇͐͘ę̸̍͒̕ȓ̴̤̍ ̴̘͊Ḵ̶̎͊a̶̮̣̯͊̄l̵̰̦̼͛̊͘â̸̺̣͌d̴̨̹͖̓̈́́i̵̗̥͚̊r̵̘͚̞̈̿̃.̴̭̀ ̷̛̣̮̏̃I̵͈̤̎t̴̻̮̏̚'̶̼̲͌̅̕s̷̬͕͚̈́͒̓ ̸̗̂͊̐͜m̵̜͚̂͂̉o̶̥̾͒̽ẗ̴͔̤ĩ̵̧̮̕v̴͓̓̄ả̷̛̘̱t̵̛̔ͅỉ̶͓̜̹o̷̡͈͓͗̔͒n̷̗̺̽̈́̚ś̵̪͘ ̶͉̞̂͠s̸̛͕̈́̓ͅé̵̯̦͚͐̚e̴͎̠͇͊͠m̵̰̈́͊͂ ̴̗̄a̸̩̙̠͋̊́s̴͉̘͚̓ ̶̰̄u̵̡͕͚̿̿ǹ̸̛̤c̷̰̥̹͐l̴͓͕̇̽ȅ̴̩̬̎a̷͇̅ṙ̷̨̻ ̶͕̿̒a̶͚̦͂͑͒ͅs̴͚̬͌̽̒͜ ̵̣͌i̸̟̟̋̓͝t̵͉͔̀'̸̧̛̟͝͝s̸̨͎̑̂ ̸̫̙͗̐ó̵̧̧͚ṙ̷̢̜̖̆ĩ̸̱͜ģ̷̧̛̼͝ī̷̢̹̝n̶̼̅̆̓ṡ̴̥̐͋.̵̗̝͑͂"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/qI3vPXf.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/1g1vSsG.png",
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
