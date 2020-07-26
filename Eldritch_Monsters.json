@@ -10,8 +10,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1595779432,
-		"dateLastModified": 1595779432
+		"dateAdded": 1595780584,
+		"dateLastModified": 1595780584
 	},
 	"monster": [
 		{
@@ -240,6 +240,7 @@
 					]
 				}
 			],
+			"tokenUrl": "https://i.imgur.com/2nN4zMM.png",
 			"traitTags": [
 				"Charge"
 			],
@@ -324,6 +325,7 @@
 					]
 				}
 			],
+			"tokenUrl": "https://i.imgur.com/orXhaLm.png",
 			"damageTags": [
 				"S"
 			]
