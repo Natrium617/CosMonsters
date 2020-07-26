@@ -10,8 +10,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1595685774,
-		"dateLastModified": 1595685774
+		"dateAdded": 1595779432,
+		"dateLastModified": 1595779432
 	},
 	"monster": [
 		{
@@ -156,6 +156,383 @@
 			],
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "Garden of Eyes",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "M",
+			"type": "oberranion",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"special": "45 (10d8}"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 20
+			},
+			"str": 13,
+			"dex": 17,
+			"con": 11,
+			"int": 9,
+			"wis": 16,
+			"cha": 6,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing  slashıng damage"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"vulnerable": [
+				"iightning"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Clumsy Flying",
+					"entries": [
+						"When the Garden of Eyes ends its turn in flight, it falls. If the Garden of Eyes is able to use its wings while falling it only takes half a5 much falling damage.",
+						"Alien Mind, The Garden of Eyes has advantage on all",
+						"Intelligence, Wisdom, and Charisma saving throws against spells."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"\\fthe Garden of Fyes flıes At least 10 ft. straight teward a creature and then successfully grapples it on the same turn, the Garden of Eyes canı make a Frenzied Assault attack against the {@condition grappled} creature a5 a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Garden of Eyes makes 2 claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"Melee Weapon Attock: {@hit 5} to hit, reach 5 ft., one target. {@h}6 (1di6+3) sSlashing damage."
+					]
+				},
+				{
+					"name": "Frenzied Assault",
+					"entries": [
+						"The Garden of Eyes assaults a {@condition grappled} creature's body and mind. The creature has a5 to make a {@dc 13} Wisdom saving throw, on a failed save it becomes {@condition frightened} until the end of the creature's next turn, on a successful save the creature takes 7 ({@damage 2d6}) psychic damage and is not {@condition frightened}. Ifthe creature is still {@condition frightened} at the end ofits next turn, it must make a {@dc 13} Wisdom saving throw or take 21 ({@damage 6d6}) psychic damage, or half a5 much on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Mad One",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 14,
+			"int": 6,
+			"wis": 8,
+			"cha": 17,
+			"save": {
+				"wis": "+1"
+			},
+			"passive": 9,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing  slashing damage"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Spreading Madness",
+					"entries": [
+						"A creature that has its Wisdom score reduced to 0 by a Mad One succumbs to madness and must use its actions before moving on each of its turns to make a melee attack against a creature other than itself. If no target is within reach the target must move to the closest visible creature and attack it. If the mad creature sees no other creature it is {@condition stunned} until its Wisdom score is no longer 0."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sickle",
+					"entries": [
+						"Melee Weapon Attack {@hit 5} to hit, reach 5 ft., one target.",
+						"Art: 6 ({@damage 1d6 + 3}) slashing damage plus 3 (146) psychic damage, and the target must succeed on a {@dc 13} Wisdom saving throw or has its Wisdom score reduced by 2 ({@dice 1d4}). The reduction lasts until the target finishes a short or long rest."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Amygdala",
+			"isNamedCreature": true,
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "G",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"great one"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 217,
+				"formula": "15d20 + 60"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 23,
+			"dex": 17,
+			"con": 19,
+			"int": 17,
+			"wis": 21,
+			"cha": 15,
+			"save": {
+				"dex": "+8",
+				"con": "+12",
+				"wis": "+5",
+				"cha": "+7"
+			},
+			"skill": {
+				"athletics": "+12",
+				"acrobatics": "+8",
+				"insight": "+10",
+				"perception": "+10"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"acid",
+				"psychic"
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing  slashing damage"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Deep Speech"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Amygdala fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The Amygdala's long jump is up to 40 ft. and its high jump is up to 60 ft., with or without a running start."
+					]
+				},
+				{
+					"name": "Great One",
+					"entries": [
+						"The Amygdalas natural weapons are magical. Additionaly it has advantage on Wisdom saving throws against magic."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Amygdala can use its Maddening"
+					]
+				},
+				{
+					"name": "Presence",
+					"entries": [
+						"It then makes three attacks; 2 Claw attacks and 1 Eldritch Smash attack."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"Melee Weapon Attack {@hit 11} to hit, reach 15 ft, one target. Hit 15 ({@damage 2d8 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Eldritch Smash",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 15 ft, one target. Ait 15 ({@damage 2d8 + 6}) bludgeoning damage plus 7 ({@damage 2d6}) force damage."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"Melee Weapon Attockc {@hit 11} to hit, reach 5 ft, one creature. Hit 13 (206+6) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Eye Laser (Recharges 5-6)",
+					"entries": [
+						"Amygdala fires a ray of eldritch energy in a 60-foot line that is 10 feet wide within 120 ft. Each creature in that area must make a {@dc 18} Dexterity saving throw, taking 54 (1208) force damage on a failed and half as much on a successful ore."
+					]
+				},
+				{
+					"name": "Maddening Presence",
+					"entries": [
+						"Each creature of the Amygdala’s",
+						"choice that is within 120 feet of the Amygdala and aware",
+						"of it must succeed on a {@dc 18} Wisdom saving throw or",
+						"become {@condition frightened} for 1 minute. A creature repeats the",
+						"saving throw at the end of each of its turns, ending the",
+						"effect on itself on a success, and taking 5 ({@dice 2d4}) psychic",
+						"damage on a failure. If a creature's saving throw is",
+						"successful or the effect ends for it, the creature is",
+						"immune to the Amygdala’s Maddening Presence for the",
+						"next 24 hours."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Stomp",
+					"entries": [
+						"Amyodala makes a Stomp attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Amygdala moves up to half its speed."
+					]
+				},
+				{
+					"name": "Maddening Presence",
+					"entries": [
+						"The Amyodala uses its Maddening Presence."
+					]
+				},
+				{
+					"name": "Amygdala Leap (2 Actions)",
+					"entries": [
+						"The Amygdala leaps up into the air and lands in a place within 40 ft of it. Each creature within 5 ft. of it as it lands must make a {@dc 18} Dexterity saving throw. On a failure a creature takes 15 (208+6) bludgeoning damage and is knocked {@condition prone}. On a successful save a creature takes half as much damage and is not knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Acidic Discharge (3 Actions) (1/Short Rest)",
+					"entries": [
+						"The Amygdala violently shakes its head, spreading acid in a 20 ft cube originating from it. Each creature in that area must make a OC 18 Dexterity saving throw, taking 20 (804) acid damage on a failed save and half as much on a successful one. The zone persists for 6 seconds (one round) and is considered difficult terrain. A creature takes 20 (G4) acid damage when it enters the zone for the first time on a turn or ends its turn there."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/zu4IdlI.png",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DS"
+			],
+			"damageTags": [
+				"B",
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
 			]
 		}
 	]
