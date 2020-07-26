@@ -10,8 +10,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1595780584,
-		"dateLastModified": 1595780584
+		"dateAdded": 1595780838,
+		"dateLastModified": 1595780838
 	},
 	"monster": [
 		{
@@ -163,7 +163,7 @@
 			"source": "EldritchMonsters",
 			"page": 0,
 			"size": "M",
-			"type": "oberranion",
+			"type": "aberration",
 			"alignment": [
 				"C",
 				"E"
@@ -172,7 +172,7 @@
 				14
 			],
 			"hp": {
-				"special": "45 (10d8}"
+				"special": "45 (10d8)"
 			},
 			"speed": {
 				"walk": 30,
