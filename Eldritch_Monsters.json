@@ -10,8 +10,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1595780838,
-		"dateLastModified": 1595780838
+		"dateAdded": 1595885957,
+		"dateLastModified": 1595885957
 	},
 	"monster": [
 		{
@@ -535,6 +535,254 @@
 			],
 			"conditionInflict": [
 				"prone"
+			]
+		},
+		{
+			"name": "Weeping Angel",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 68,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": 60,
+				"UNPARSED_SPEED": "60 ft., fly 60 ft.(can only move whilst unseen)"
+			},
+			"str": 15,
+			"dex": 13,
+			"con": 20,
+			"int": 12,
+			"wis": 16,
+			"cha": 15,
+			"save": {
+				"con": "+8",
+				"wis": "+6",
+				"cha": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing  slashing"
+					],
+					"note": "from nonmagical weapons that aren't adamantine"
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"exhausted",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Celestial",
+				"Deep Speech",
+				"telepathy 120 ft."
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Petrifying Red Light Green Light",
+					"entries": [
+						"While a creature observes the angel without blinking, it gains the {@condition petrified} condition and cannot move or attack. While in this state its resistances become immunities and gains all the effects of a {@condition petrified} creature. A creature can use his or her reaction to cast out a 60 ft cone with his/her sight and any angel caught in the cone will be {@condition petrified} on its next turn. After 5 uses of this ability, the creature must make a Constitution saving throw with a DC of 5 to succeed on each subsequent turn. This DC increases by 5 each time it is attempted up to a maximum of 20. The area of this ability is halved if the creature is in low light (without darkvision) and cannot be used by a {@condition blinded} creature, creatures relying on blindsight to see, those in complete darkness, undead or constructs. While not {@condition petrified} and working with other Angels, the Angel can use its reaction to ensure that it doesn't look at another Angel and If two angels fail to use their reaction and look at each other then they remain {@condition petrified} until something breaks the line of sight such as a Darkness spell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The Angel has advantage on attack rolls against a creature if at least one of its allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the Angel remains motionless, it is indistinguishable from an inanimate statue."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Angel makes two attacks: one with its bite and one with its claws or can use its aging touch instead."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Aging Touch",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) necrotic damage and the Angel regains hit points equal to the damage done. The targets maximum hit points are lowered based on the necrotic damage done and the character ages a number of years equal to the damage of the attack. The lost hit points are restored after a long rest but the additional years of age can only be restored by a greater restoration spell or similar magic. Each time a character suffers a aging touch that takes them above a venerable age (e.g. 70 with humans) they gain a level of {@condition exhaustion} and after gaining 5 levels the victim dies and turns to ash."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/x9Q9vVD.png",
+			"traitTags": [
+				"False Appearance",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CE",
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Lesser Weeping Angel",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "6d6 + 24",
+				"average": 45
+			},
+			"speed": {
+				"walk": 60,
+				"UNPARSED_SPEED": "60 ft., fly 60 ft.(can only move whilst unseen)"
+			},
+			"str": 15,
+			"dex": 13,
+			"con": 18,
+			"int": 12,
+			"wis": 16,
+			"cha": 15,
+			"save": {
+				"con": "+6",
+				"wis": "+5",
+				"str": "+2",
+				"dex": "+1",
+				"int": "+1",
+				"cha": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing  slashing"
+					],
+					"note": "from nonmagical weapons that aren't adamantine"
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"exhausted",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Celestial",
+				"Deep Speech",
+				"telepathy 120 ft."
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Petrifying Red Light Green Light",
+					"entries": [
+						"While a creature observes the angel without blinking, it gains the {@condition petrified} condition and cannot move or attack. While in this state its resistances become immunities and gains all the effects of a {@condition petrified} creature. A creature can use his or her reaction to cast out a 60 ft cone with his/her sight and any angel caught in the cone will be {@condition petrified} on its next turn. After 5 uses of this ability, the creature must make a Constitution saving throw with a DC of 5 to succeed on each subsequent turn. This DC increases by 5 each time it is attempted up to a maximum of 20. The area of this ability is halved if the creature is in low light (without darkvision) and cannot be used by a {@condition blinded} creature, creatures relying on blindsight to see, those in complete darkness, undead or constructs. While not {@condition petrified} and working with other Angels, the Angel can use its reaction to ensure that it doesn't look at another Angel and If two angels fail to use their reaction and look at each other then they remain {@condition petrified} until something breaks the line of sight such as a Darkness spell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The Angel has advantage on attack rolls against a creature if at least one of its allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the Angel remains motionless, it is indistinguishable from an inanimate statue."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Aging Touch",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6({@damage 1d6 + 3}) necrotic damage and the Angel regains hit points equal to the damage done. The targets maximum hit points are lowered based on the necrotic damage done and the character ages a number of years equal to the damage of the attack. The lost hit points are restored after a long rest but the additional years of age can only be restored by a greater restoration spell or similar magic. Each time a character suffers a aging touch that takes them above a venerable age (e.g. 70 with humans) they gain a level of {@condition exhaustion} and after gaining 5 levels the victim dies and turns to ash."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/hAERiWr.png",
+			"traitTags": [
+				"False Appearance",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"CE",
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
 			]
 		}
 	]
