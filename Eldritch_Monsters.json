@@ -10,8 +10,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1595885957,
-		"dateLastModified": 1595885957
+		"dateAdded": 1596536968,
+		"dateLastModified": 1596536968
 	},
 	"monster": [
 		{
@@ -783,6 +783,188 @@
 			],
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "Witcher",
+			"isNamedCreature": true,
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|PHB|splint}"
+					]
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 14,
+			"int": 12,
+			"wis": 18,
+			"cha": 8,
+			"skill": {
+				"athletics": "+6",
+				"history": "+4",
+				"intimidation": "+2",
+				"nature": "+4",
+				"perception": "+7",
+				"survival": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Witcher can make two longsword attacks, or one Longsword and one Sign/crossbow attack."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@hit 5} to hit, 5 ft range. {@damage 1d8 + 3} slashing damage ({@dice 1d10 + 3} with both hands)"
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"Light, loading, ranged. 30/120. {@damage 1d6 + 3} piercing damage."
+					]
+				},
+				{
+					"name": "Blade Oil",
+					"entries": [
+						"The Witcher can use an action to coat his blade in an oil effective against one opponent and those of its kind, transforming it into a magical weapon that nullifies any of that creature's natural resistances to his sword.",
+						"Lasts for 10 minutes. Can be used three times, then requires a short rest to recharge."
+					]
+				},
+				{
+					"name": "Signs",
+					"entries": [
+						"The Witcher can cast one of five simple spells."
+					]
+				},
+				{
+					"name": "Aard",
+					"entries": [
+						"Makes a ranged Shove attack in a 15 foot cone. +5 to attack."
+					]
+				},
+				{
+					"name": "Igni",
+					"entries": [
+						"You hurl a mote of fire at a creature or object within range. {@hit 5} to hit. On a hit, the target takes {@damage 2d10} fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried."
+					]
+				},
+				{
+					"name": "Yrden",
+					"entries": [
+						"Makes a ranged Grapple attack. +5 to attack, range 10 ft. On a success, the target Is {@condition restrained} until the start of the Witcher's next turn, though it can make a contested Strength saving throw to break free, and incorporeal targets are made corporeal."
+					]
+				},
+				{
+					"name": "Quen",
+					"entries": [
+						"Reduces damage of the next attack taken by {@dice 1d4 + 2}."
+					]
+				},
+				{
+					"name": "Axii",
+					"entries": [
+						"Duration: Concentration, up to 1 minute. For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature {@condition prone} to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it."
+					]
+				},
+				{
+					"name": "Drink Potion",
+					"entries": [
+						"As an action the Witcher can drink one of the following potions. The Witcher must make a Constitution saving throw with a DC of 10 + the number of potions drank since the last short rest or be {@condition poisoned} for one minute."
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"The Witcher regenerates 5 HP at the start of its turn for two minutes."
+					]
+				},
+				{
+					"name": "Wolf",
+					"entries": [
+						"Critical hits on 19 & 20 for one minute."
+					]
+				},
+				{
+					"name": "Black Blood",
+					"entries": [
+						"Monsters that drink the Witcher's blood must make a Constitution saving throw. On a failure they take {@damage 4d6} poison damage. On a success the damage is reduced by half. Lasts for two hours."
+					]
+				},
+				{
+					"name": "Blizzard",
+					"entries": [
+						"Allows the Witcher to take the Dodge action as a bonus action for one minute."
+					]
+				},
+				{
+					"name": "Petri's Philter",
+					"entries": [
+						"Add +2 to attack rolls and ability checks made from casting Signs for one minute.",
+						"Thunderbolt: For one minute, the Witcher adds {@dice 2d4} to its damage rolls, but enemies attacking him do so with advantage."
+					]
+				},
+				{
+					"name": "Cat",
+					"entries": [
+						"Grants advantage on perception checks for 1 minute."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Adaptive Fighter",
+					"entries": [
+						"The Witcher can make a Weapon Attack or drink a potion."
+					]
+				},
+				{
+					"name": "Footwork",
+					"entries": [
+						"The Witcher can move up to half of it's speed. This movement does not provoke opportunity attacks."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"miscTags": [
+				"RNG"
+			],
+			"conditionInflict": [
+				"restrained"
 			]
 		}
 	]
