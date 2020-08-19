@@ -10,8 +10,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1596536968,
-		"dateLastModified": 1596536968
+		"dateAdded": 1597854858,
+		"dateLastModified": 1597854858
 	},
 	"monster": [
 		{
@@ -962,6 +962,99 @@
 			],
 			"miscTags": [
 				"RNG"
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Walter, the Flesh Mound",
+			"shortName": "Flesh Mound",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 119,
+				"formula": "14d10 + 42"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 20
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 16,
+			"int": 3,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 10,
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Innocent Heart",
+					"entries": [
+						"Walter's infant corpse lies at the heart of the Flesh Mound, crying and afraid. So long as a creature remains engulfed within the Flesh Mound, they are entrapped within the central cavity where Walter's corpse dwells.",
+						"This \\\"Heart\\\" is encased by a thick shell of white bone and pulsating veins that extend throughout the mound.",
+						"The Heart has an AC of 10 and 5 HP; if the Heart's hit points are reduced to 0, the Flesh Mound is reduced to",
+						"0 hit points and dissolves into a pile of liquid gore."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5ft, one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage. If the target is a creature, the Flesh Mound can grapple it (escape {@dc 14}) instead of dealing the bludgeoning damage."
+					]
+				},
+				{
+					"name": "Engulf",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5ft, one target. {@h}The Flesh Mound engulfs a Medium or smaller creature {@condition grappled} by it. The engulfed target is {@condition restrained}, and must succeed on a {@dc 14} Constitution saving throw at the start of each of its turns, taking 3 ({@damage 1d4}) bludgeoning damage on a failure. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Engulf",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4}) bludgeoning damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/xwSaCtU.png",
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
 			],
 			"conditionInflict": [
 				"restrained"
