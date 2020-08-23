@@ -10,8 +10,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1597854858,
-		"dateLastModified": 1597854858
+		"dateAdded": 1598183243,
+		"dateLastModified": 1598183243
 	},
 	"monster": [
 		{
@@ -1058,6 +1058,171 @@
 			],
 			"conditionInflict": [
 				"restrained"
+			]
+		},
+		{
+			"name": "Shadow Hound",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 21,
+				"formula": "2d8 + 12"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 13,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"resist": [
+				"poison"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Languages—",
+					"entries": [
+						"Challenge 1 (200 XP)"
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The hound magically turns {@condition invisible} until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the hound wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Dog",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "S",
+			"type": "beast",
+			"alignment": [
+				"L",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 5,
+				"formula": "1d6 + 2"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 4,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"trait": [
+				{
+					"name": "Languages—",
+					"entries": [
+						"Challenge 1/8 (25 XP)"
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Unwavering Loyalty",
+					"entries": [
+						"The dog will always follow the commands of an NPC that they have a positive relationship with (i.e. the dog's owner)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Bark",
+					"entries": [
+						"The dog uses a bonus action to have a creature within 15 of it make a {@dc 11} Wisdom saving throw or become {@condition frightened} until the end of the dog's next turn. The targeted creature(s) must be capable of hearing in order for this condition to take effect. Creatures affected by the Unwavering Loyalty trait automatically succeed this saving throw."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
 			]
 		}
 	]
