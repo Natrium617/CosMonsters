@@ -1,0 +1,257 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "EldritchMonsters",
+				"abbreviation": "EM",
+				"full": "Eldritch Monsters",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1605114883,
+		"dateLastModified": 1605114883
+	},
+	"monster": [
+		{
+			"name": "Demonic Knight",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item half plate armor|PHB|half plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d8 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 13,
+			"con": 18,
+			"int": 17,
+			"wis": 18,
+			"cha": 18,
+			"skill": {
+				"arcana": "+6",
+				"athletics": "+8",
+				"perception": "+7",
+				"stealth": "+4"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing damage"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The demonic knight's innate spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can cast the following spells without requiring material components:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell wall of ice}"
+					],
+					"daily": {
+						"2": [
+							"{@spell dispel magic}"
+						],
+						"1e": [
+							"{@spell bestow curse}",
+							"{@spell fireball}"
+						]
+					},
+					"footerEntries": [
+						"Magic Weapon: The demonic knight's weapon attacks are considered magical for the purposes of damage resistance."
+					],
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Traits",
+					"entries": []
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The demonic knight makes two longsword attacks, or one one-handed longsword attack and one mailed fist attack."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage, or 10 ({@damage 1d10 + 5}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Mailed Fist",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Breath of Unlife {@recharge 5}",
+					"entries": [
+						"The demonic knight releases a 10-foot cone of necrotic breath. Creatures in the area must make a {@dc 15} Constitution saving throw. On a failed save, a creature takes 28 ({@damage 8d6}) necrotic damage. If a humanoid creature is slain by this damage, it rises as a shadow demon under the command of the demonic knight that created it. The new shadow demon remains enslaved to the demonic knight until the knight's death and cannot summon demons of its own. A demonic knight can only have two such shadow demons under its command."
+					]
+				},
+				{
+					"name": "Summon Demon (1/Day)",
+					"entries": [
+						"A demonic knight has a 50 percent chance of summoning {@dice 1d4} shadow demons, 2 hezrous, 1 glabrezu, 1 vrock, or 1 marilith. The summoned demon appears in an unoccupied space within 60 feet. It cannot summon further demons and remains only for 1 minute before vanishing. It disappears early if it or the demonic knight is slain."
+					]
+				}
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Standard Soldier",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "M",
+			"type": "sized human",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 40,
+				"formula": "5d10 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 15,
+			"int": 12,
+			"wis": 10,
+			"cha": 13,
+			"skill": {
+				"dex+": "6",
+				"con+": "5",
+				"intimidation+": "4"
+			},
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Earthling"
+			],
+			"trait": [
+				{
+					"name": "Riflery",
+					"entries": [
+						"Adds + 2 to attack rolls for 2 handed rifles that do not have the scatter or bulky property.,"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Auto Rifle Ranged weapon Attack",
+					"entries": [
+						"{@hit 5} to hit, 90/300, one target. Hit:__  ({@dice 2d8 + 3}) piercing, Reload 24.",
+						"Full auto ({@dice 6d6 + 3}) piercing, reload 1."
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"Ranged weapon attack: {@hit 3} to hit, reach 40/120., one target. Hit:__  ({@dice 1d10 + 3}) piercing, reload 9."
+					]
+				},
+				{
+					"name": "Bayonet/Knife",
+					"entries": [
+						"Melee weapon attack: {@hit 2} to hit reach 5ft., one target. Hit:__ ({@dice 1d4 + 2}) piercing."
+					]
+				},
+				{
+					"name": "Attachments",
+					"entries": [
+						"Glow dot sight: +1 to attack rolls on creatures within 30ft",
+						"Bayonet",
+						"Glowtorch: Can be turned on or off as a bonus action. Sheds bright and dim light in a 30ft cone."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Crippling fear",
+					"entries": [
+						"If soldiers are knocked {@condition unconscious}, lose a limb, or have hit points reduced down to 5 or below, all morale is lost and they are stricken with fear."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			]
+		}
+	]
+}
