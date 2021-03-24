@@ -1,0 +1,394 @@
+{
+	"monster": [
+		{
+			"name": "WENDIGO",
+			"source": "wendigo",
+			"page": 0,
+			"size": "M",
+			"type": "menstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 60,
+				"climb": 40
+			},
+			"trait": [
+				{
+					"name": "5TR DEX CON INT WIS CHA",
+					"entries": [
+						"18(+4) 24(+7) 1663) 11(+0) 12(+1) 9(-1)",
+						"Saving Throws Dex +10, Wis +4",
+						"Skills Athletics +7, Intimidation +5, Perception +7, Stealth +10, Survival +4",
+						"Damage Immunities bludgeoning, piercing and slashing damage from nonmagical weapons that aren'tsilvered, cold",
+						"Damage Resistances poison, psychic",
+						"Condition Immunities {@condition charmed}, {@condition frightened}",
+						"Senses blindsight 60 ft., darkvision 120 ft., passive",
+						"Perception 17",
+						"Languages Common, Sylvari",
+						"Challenge 7 (2900 XP)"
+					]
+				},
+				{
+					"name": "Boreal Camouflage",
+					"entries": [
+						"The Wendigo has advantage on Dexterity (Stealth) checks made to hide in snow. When surrounded by snow or foliage, the Wvendigo can hide as a bonus action."
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"The Wendigo has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Percolate Projectiles",
+					"entries": [
+						"\\Nhen a creature that the Wendigo can see hits it with a ranged weapon attack, the",
+						"Wendigo can make a Dexterity saving throw with a DC equal to the attack roll's total (the Wendigo automatically fails this saving throw ifthe attack was a critical hit). On a successful save, the attack misses instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"When the Wendigo dies, it returns to life 12 ({@dice 2d10 + 1}) hours later and regains all of its hit points, unless its body is immolated beforehand."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiottack",
+					"entries": [
+						"The Wvendigo makes 3 attacks: one with its bite, and two with its claws. It can replace 2 ofthese attacks with its acid reflux, if available."
+					]
+				},
+				{
+					"name": "Acid Reflux {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 20/60 ft., one target. {@h}26 ({@damage 4d12}) acid damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw Slash",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Consume Flesh",
+					"entries": [
+						"The Wendigo makes one bite attack against a creature that isn't a construct, elemental, ooze, or undead. On a hit, the target takes arı additional 7 ({@damage 2d6}) necrotic damage, and the Wendigo regains a number of hit points equal to the amount of necrotic damage taken by the target; furthermore, the target can't regain hit points until the end of its next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Gaze Of Insanity",
+					"entries": [
+						"The Wendigo stares into the eyes ofa creature that targets it as part of an attack or spell. That creature must make a {@dc 13} Wisdom saving throw. On a failure, the creature's attack or spell fails, and it suffers from the following Long-Term Madness effect: the creature experiences a powerful urge to partake in cannibalism, and does not gain nourishment from any food other than raw flesh."
+					]
+				},
+				{
+					"name": "Rollback",
+					"entries": [
+						"When a creature makes an attack against the",
+						"Wendigo and misses, the Wendigo can move up to half its movement speed away from the creature, without provoking opportunity attacks. If the Wendigo is surrounded by snow or foliage, it can then immediately take the Hide action."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Rejuvenation"
+			],
+			"damageTags": [
+				"A",
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "WENDIGO",
+			"source": "EldritchMonsters",
+			"page": 0,
+			"size": "M",
+			"type": "menstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 60,
+				"climb": 40
+			},
+			"trait": [
+				{
+					"name": "5TR DEX CON INT WIS CHA",
+					"entries": [
+						"18(+4) 24(+7) 1663) 11(+0) 12(+1) 9(-1)",
+						"Saving Throws Dex +10, Wis +4",
+						"Skills Athletics +7, Intimidation +5, Perception +7, Stealth +10, Survival +4",
+						"Damage Immunities bludgeoning, piercing and slashing damage from nonmagical weapons that aren'tsilvered, cold",
+						"Damage Resistances poison, psychic",
+						"Condition Immunities {@condition charmed}, {@condition frightened}",
+						"Senses blindsight 60 ft., darkvision 120 ft., passive",
+						"Perception 17",
+						"Languages Common, Sylvari",
+						"Challenge 7 (2900 XP)"
+					]
+				},
+				{
+					"name": "Boreal Camouflage",
+					"entries": [
+						"The Wendigo has advantage on Dexterity (Stealth) checks made to hide in snow. When surrounded by snow or foliage, the Wvendigo can hide as a bonus action."
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"The Wendigo has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Percolate Projectiles",
+					"entries": [
+						"\\Nhen a creature that the Wendigo can see hits it with a ranged weapon attack, the",
+						"Wendigo can make a Dexterity saving throw with a DC equal to the attack roll's total (the Wendigo automatically fails this saving throw ifthe attack was a critical hit). On a successful save, the attack misses instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"When the Wendigo dies, it returns to life 12 ({@dice 2d10 + 1}) hours later and regains all of its hit points, unless its body is immolated beforehand."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiottack",
+					"entries": [
+						"The Wvendigo makes 3 attacks: one with its bite, and two with its claws. It can replace 2 ofthese attacks with its acid reflux, if available."
+					]
+				},
+				{
+					"name": "Acid Reflux {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 20/60 ft., one target. {@h}26 ({@damage 4d12}) acid damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw Slash",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Consume Flesh",
+					"entries": [
+						"The Wendigo makes one bite attack against a creature that isn't a construct, elemental, ooze, or undead. On a hit, the target takes arı additional 7 ({@damage 2d6}) necrotic damage, and the Wendigo regains a number of hit points equal to the amount of necrotic damage taken by the target; furthermore, the target can't regain hit points until the end of its next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Gaze Of Insanity",
+					"entries": [
+						"The Wendigo stares into the eyes ofa creature that targets it as part of an attack or spell. That creature must make a {@dc 13} Wisdom saving throw. On a failure, the creature's attack or spell fails, and it suffers from the following Long-Term Madness effect: the creature experiences a powerful urge to partake in cannibalism, and does not gain nourishment from any food other than raw flesh."
+					]
+				},
+				{
+					"name": "Rollback",
+					"entries": [
+						"When a creature makes an attack against the",
+						"Wendigo and misses, the Wendigo can move up to half its movement speed away from the creature, without provoking opportunity attacks. If the Wendigo is surrounded by snow or foliage, it can then immediately take the Hide action."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Rejuvenation"
+			],
+			"damageTags": [
+				"A",
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "WENDIGO",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "menstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 60,
+				"climb": 40
+			},
+			"trait": [
+				{
+					"name": "5TR DEX CON INT WIS CHA",
+					"entries": [
+						"18(+4) 24(+7) 1663) 11(+0) 12(+1) 9(-1)",
+						"Saving Throws Dex +10, Wis +4",
+						"Skills Athletics +7, Intimidation +5, Perception +7, Stealth +10, Survival +4",
+						"Damage Immunities bludgeoning, piercing and slashing damage from nonmagical weapons that aren'tsilvered, cold",
+						"Damage Resistances poison, psychic",
+						"Condition Immunities {@condition charmed}, {@condition frightened}",
+						"Senses blindsight 60 ft., darkvision 120 ft., passive",
+						"Perception 17",
+						"Languages Common, Sylvari",
+						"Challenge 7 (2900 XP)"
+					]
+				},
+				{
+					"name": "Boreal Camouflage",
+					"entries": [
+						"The Wendigo has advantage on Dexterity (Stealth) checks made to hide in snow. When surrounded by snow or foliage, the Wvendigo can hide as a bonus action."
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"The Wendigo has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Percolate Projectiles",
+					"entries": [
+						"\\Nhen a creature that the Wendigo can see hits it with a ranged weapon attack, the",
+						"Wendigo can make a Dexterity saving throw with a DC equal to the attack roll's total (the Wendigo automatically fails this saving throw ifthe attack was a critical hit). On a successful save, the attack misses instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"When the Wendigo dies, it returns to life 12 ({@dice 2d10 + 1}) hours later and regains all of its hit points, unless its body is immolated beforehand."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiottack",
+					"entries": [
+						"The Wvendigo makes 3 attacks: one with its bite, and two with its claws. It can replace 2 ofthese attacks with its acid reflux, if available."
+					]
+				},
+				{
+					"name": "Acid Reflux {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 20/60 ft., one target. {@h}26 ({@damage 4d12}) acid damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw Slash",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Consume Flesh",
+					"entries": [
+						"The Wendigo makes one bite attack against a creature that isn't a construct, elemental, ooze, or undead. On a hit, the target takes arı additional 7 ({@damage 2d6}) necrotic damage, and the Wendigo regains a number of hit points equal to the amount of necrotic damage taken by the target; furthermore, the target can't regain hit points until the end of its next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Gaze Of Insanity",
+					"entries": [
+						"The Wendigo stares into the eyes ofa creature that targets it as part of an attack or spell. That creature must make a {@dc 13} Wisdom saving throw. On a failure, the creature's attack or spell fails, and it suffers from the following Long-Term Madness effect: the creature experiences a powerful urge to partake in cannibalism, and does not gain nourishment from any food other than raw flesh."
+					]
+				},
+				{
+					"name": "Rollback",
+					"entries": [
+						"When a creature makes an attack against the",
+						"Wendigo and misses, the Wendigo can move up to half its movement speed away from the creature, without provoking opportunity attacks. If the Wendigo is surrounded by snow or foliage, it can then immediately take the Hide action."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Rejuvenation"
+			],
+			"damageTags": [
+				"A",
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		}
+	]
+}
